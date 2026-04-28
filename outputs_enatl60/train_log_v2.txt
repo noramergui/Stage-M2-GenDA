@@ -1,0 +1,32 @@
+/home/nora/GenDA/modulus/modulus/distributed/manager.py:346: UserWarning: Could not initialize using ENV, SLURM or OPENMPI methods. Assuming this is a single process job
+  warn(
+[11:41:52 - train_enatl60 - INFO] Démarrage entraînement GenDA/eNATL60
+[11:41:52 - train_enatl60 - INFO] GPU : cuda:0
+[11:41:52 - train_enatl60 - INFO] total_kimg : 10
+[11:41:52 - training_loop - INFO] batch_size_gpu: 4
+[11:41:52 - training_loop - INFO] Constructing network...
+[11:41:53 - training_loop - INFO] Setting up optimizer...
+[11:41:53 - training_loop - WARNING] Could not load network and optimizer states
+[11:41:53 - training_loop - INFO] Training for 10 kimg...
+/home/nora/GenDA/training/training_diff/training_loop.py:285: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  loss_sum = torch.tensor([loss_accum], device=device)
+[11:44:51 - training_loop - INFO] tick 0     kimg 1.0       time 2m 58s       sec/tick 177.2   sec/kimg 177.17  maintenance 0.9    cpumem 16.97  gpumem 1.53   reserved 1.68  
+[11:44:51 - training_loop - INFO] Saved model in the /home/nora/GenDA/outputs_enatl60/ directory
+[11:44:51 - training_loop - INFO] Saved optimizer state in the /home/nora/GenDA/outputs_enatl60/ directory
+[11:45:04 - training_loop - INFO] tick 1     kimg 2.0       time 3m 12s       sec/tick 13.6    sec/kimg 13.58   maintenance 0.2    cpumem 16.97  gpumem 1.53   reserved 1.68  
+[11:45:36 - training_loop - INFO] tick 2     kimg 3.0       time 3m 44s       sec/tick 31.7    sec/kimg 31.68   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  
+[11:45:50 - training_loop - INFO] tick 3     kimg 4.0       time 3m 57s       sec/tick 13.6    sec/kimg 13.56   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  
+[11:46:20 - training_loop - INFO] tick 4     kimg 5.0       time 4m 28s       sec/tick 30.6    sec/kimg 30.65   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  
+[11:46:35 - training_loop - INFO] tick 5     kimg 6.0       time 4m 42s       sec/tick 14.6    sec/kimg 14.60   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  
+[11:46:35 - training_loop - INFO] Saved model in the /home/nora/GenDA/outputs_enatl60/ directory
+[11:46:35 - training_loop - INFO] Saved optimizer state in the /home/nora/GenDA/outputs_enatl60/ directory
+[11:47:07 - training_loop - INFO] tick 6     kimg 7.0       time 5m 15s       sec/tick 32.2    sec/kimg 32.20   maintenance 0.2    cpumem 16.97  gpumem 1.53   reserved 1.68  
+[11:47:22 - training_loop - INFO] tick 7     kimg 8.0       time 5m 30s       sec/tick 15.0    sec/kimg 14.95   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  
+[11:47:54 - training_loop - INFO] tick 8     kimg 9.0       time 6m 02s       sec/tick 31.8    sec/kimg 31.85   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  
+[11:48:09 - training_loop - INFO] tick 9     kimg 10.0      time 6m 16s       sec/tick 14.9    sec/kimg 14.90   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  
+[11:48:09 - training_loop - INFO] Saved model in the /home/nora/GenDA/outputs_enatl60/ directory
+[11:48:09 - training_loop - INFO] Saved optimizer state in the /home/nora/GenDA/outputs_enatl60/ directory
+[11:48:09 - training_loop - INFO] Exiting...
+Dataset prêt : 274 pas de temps, 128x128 pixels
+Dataset prêt : 61 pas de temps, 128x128 pixels

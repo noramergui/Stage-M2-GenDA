@@ -15,8 +15,8 @@ from src.sda import VPSDE, eps_edm
 from modulus.models.diffusion import EDMPrecond
 
 # ── Configuration ──────────────────────────────────────────────────────────
-data_dir   = '/home/nora/GenDA/input_data_enatl60/'
-output_dir = '/home/nora/GenDA/outputs_enatl60/'
+data_dir   = '/data2/nora/GenDA_workspace/input_data_enatl60/'
+output_dir = '/data2/nora/GenDA_workspace/outputs_enatl60/'
 ckpt_path  = output_dir + 'ema_checkpoint_final.pt'
 n_members  = 4     # nombre de reconstructions indépendantes
 n_steps    = 64    # pas du reverse process (256 en vrai, 64 pour le test)

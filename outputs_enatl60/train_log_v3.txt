@@ -1,8 +1,17 @@
+/home/nora/GenDA/modulus/modulus/distributed/manager.py:346: UserWarning: Could not initialize using ENV, SLURM or OPENMPI methods. Assuming this is a single process job
+  warn(
+[15:17:49 - train_enatl60 - INFO] Démarrage entraînement GenDA/eNATL60
+[15:17:49 - train_enatl60 - INFO] GPU : cuda:0
+[15:17:49 - train_enatl60 - INFO] total_kimg : 10
+[15:17:49 - train_enatl60 - INFO] batch_size : 4
 [15:17:49 - training_loop - INFO] batch_size_gpu: 4
 [15:17:49 - training_loop - INFO] Constructing network...
 [15:17:50 - training_loop - INFO] Setting up optimizer...
 [15:17:50 - training_loop - WARNING] Could not load network and optimizer states
 [15:17:50 - training_loop - INFO] Training for 10 kimg...
+/home/nora/GenDA/training/training_diff/training_loop.py:284: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  loss_sum = torch.tensor([loss_accum], device=device)
 [15:19:41 - training_loop - INFO] tick 0     kimg 1.0       time 1m 52s       sec/tick 110.9   sec/kimg 110.88  maintenance 0.9    cpumem 16.97  gpumem 1.53   reserved 1.68  
 [15:19:41 - training_loop - INFO] Saved model in the /data2/nora/GenDA_workspace/outputs_enatl60/ directory
 [15:19:41 - training_loop - INFO] Saved optimizer state in the /data2/nora/GenDA_workspace/outputs_enatl60/ directory
@@ -20,3 +29,5 @@
 [15:23:17 - training_loop - INFO] Saved model in the /data2/nora/GenDA_workspace/outputs_enatl60/ directory
 [15:23:17 - training_loop - INFO] Saved optimizer state in the /data2/nora/GenDA_workspace/outputs_enatl60/ directory
 [15:23:17 - training_loop - INFO] Exiting...
+Dataset prêt : 274 pas de temps, 128x128 pixels
+Dataset prêt : 61 pas de temps, 128x128 pixels

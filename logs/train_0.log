@@ -1,3 +1,4 @@
-[11:41:52 - train_enatl60 - INFO] Démarrage entraînement GenDA/eNATL60
-[11:41:52 - train_enatl60 - INFO] GPU : cuda:0
-[11:41:52 - train_enatl60 - INFO] total_kimg : 10
+[15:17:49 - train_enatl60 - INFO] Démarrage entraînement GenDA/eNATL60
+[15:17:49 - train_enatl60 - INFO] GPU : cuda:0
+[15:17:49 - train_enatl60 - INFO] total_kimg : 10
+[15:17:49 - train_enatl60 - INFO] batch_size : 4

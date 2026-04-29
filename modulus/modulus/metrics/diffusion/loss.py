@@ -513,14 +513,30 @@ class EDMLoss:
             A tensor representing the loss calculated based on the network's
             predictions.
         """
-        rnd_normal = torch.randn([images.shape[0], 1, 1, 1], device=images.device)
+
+        # 1. Tire un niveau de bruit sigma pour chaque image du batch 
+        # Pour chaque patch du batch, on tire un niveau de bruit sigma aléatoire. 
+        # Parfois beaucoup de bruit, parfois peu — pour que le réseau apprenne à débruiter à tous les niveaux.
+        rnd_normal = torch.randn([images.shape[0], 1, 1, 1], device=images.device) # on tire un sigma par image
         sigma = (rnd_normal * self.P_std + self.P_mean).exp()
+
+        # 2. Calcule un poids pour la loss (images bruitées comptent moins)
+        # Les patches très bruités sont plus faciles à débruiter — on leur donne moins d'importance dans la loss. 
+        # C'est une pondération pour équilibrer l'apprentissage.
         weight = (sigma**2 + self.sigma_data**2) / (sigma * self.sigma_data) ** 2
         y, augment_labels = (
             augment_pipe(images) if augment_pipe is not None else (images, None)
         )
+
+        # 3. Génère le bruit et l'ajoute à l'image propre
         n = torch.randn_like(y) * sigma
+
+        # 4. Le réseau essaie de débruiter
+        # On donne au réseau le patch bruité y + n et le niveau de bruit sigma. 
+        # Il essaie de retrouver le patch propre.
         D_yn = net(y + n, sigma[:,0,0,0], labels, augment_labels=augment_labels) # fixed Positional embedding shape error in modulus release
+        
+        # 5. Loss = différence entre image débruitée et image propre originale
         loss = weight * ((D_yn - y) ** 2)
         return loss
 

@@ -16,8 +16,8 @@ from modulus.models.diffusion import EDMPrecond
 
 # ── Configuration ──────────────────────────────────────────────────────────
 data_dir   = '/data2/nora/GenDA_workspace/input_data_enatl60/'
-output_dir = '/data2/nora/GenDA_workspace/outputs_enatl60/'
-ckpt_path  = output_dir + 'ema_checkpoint_final.pt'
+output_dir = '/data2/nora/GenDA_workspace/experiments/exp01_minitest_10kimg_lr=10000/'
+ckpt_path  = output_dir + 'ema-state-diffusion-000010.mdlus'
 n_members  = 4     # nombre de reconstructions indépendantes
 n_steps    = 64    # pas du reverse process (256 en vrai, 64 pour le test)
 device     = torch.device('cuda')
@@ -35,19 +35,8 @@ dataset = eNATL60_Inference_Dataset(
 
 # ── Modèle ─────────────────────────────────────────────────────────────────
 print('Chargement du checkpoint...')
-net = EDMPrecond(
-    img_resolution = 128,
-    img_channels   = 1,
-    model_type     = 'SongUNet',
-    model_channels = 64,
-    num_blocks     = 2,
-    embedding_type = 'positional',
-    encoder_type   = 'standard',
-    decoder_type   = 'standard',
-    dropout        = 0.13,
-    use_fp16       = False,
-)
-net.load_state_dict(torch.load(ckpt_path, map_location=device))
+from modulus import Module
+net = Module.from_checkpoint(ckpt_path)
 net = net.eval().to(device)
 print('Checkpoint chargé.')
 

@@ -1,22 +1,25 @@
-[15:17:49 - training_loop - INFO] batch_size_gpu: 4
-[15:17:49 - training_loop - INFO] Constructing network...
-[15:17:50 - training_loop - INFO] Setting up optimizer...
-[15:17:50 - training_loop - WARNING] Could not load network and optimizer states
-[15:17:50 - training_loop - INFO] Training for 10 kimg...
-[15:19:41 - training_loop - INFO] tick 0     kimg 1.0       time 1m 52s       sec/tick 110.9   sec/kimg 110.88  maintenance 0.9    cpumem 16.97  gpumem 1.53   reserved 1.68  
-[15:19:41 - training_loop - INFO] Saved model in the /data2/nora/GenDA_workspace/outputs_enatl60/ directory
-[15:19:41 - training_loop - INFO] Saved optimizer state in the /data2/nora/GenDA_workspace/outputs_enatl60/ directory
-[15:19:58 - training_loop - INFO] tick 1     kimg 2.0       time 2m 09s       sec/tick 16.6    sec/kimg 16.63   maintenance 0.3    cpumem 16.97  gpumem 1.53   reserved 1.68  
-[15:20:31 - training_loop - INFO] tick 2     kimg 3.0       time 2m 41s       sec/tick 32.8    sec/kimg 32.80   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  
-[15:20:47 - training_loop - INFO] tick 3     kimg 4.0       time 2m 57s       sec/tick 15.7    sec/kimg 15.73   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  
-[15:21:22 - training_loop - INFO] tick 4     kimg 5.0       time 3m 32s       sec/tick 35.1    sec/kimg 35.14   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  
-[15:21:37 - training_loop - INFO] tick 5     kimg 6.0       time 3m 47s       sec/tick 14.9    sec/kimg 14.93   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  
-[15:21:37 - training_loop - INFO] Saved model in the /data2/nora/GenDA_workspace/outputs_enatl60/ directory
-[15:21:37 - training_loop - INFO] Saved optimizer state in the /data2/nora/GenDA_workspace/outputs_enatl60/ directory
-[15:22:12 - training_loop - INFO] tick 6     kimg 7.0       time 4m 22s       sec/tick 34.6    sec/kimg 34.59   maintenance 0.2    cpumem 16.97  gpumem 1.53   reserved 1.68  
-[15:22:27 - training_loop - INFO] tick 7     kimg 8.0       time 4m 38s       sec/tick 15.7    sec/kimg 15.67   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  
-[15:23:02 - training_loop - INFO] tick 8     kimg 9.0       time 5m 12s       sec/tick 34.4    sec/kimg 34.41   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  
-[15:23:17 - training_loop - INFO] tick 9     kimg 10.0      time 5m 27s       sec/tick 15.3    sec/kimg 15.28   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  
-[15:23:17 - training_loop - INFO] Saved model in the /data2/nora/GenDA_workspace/outputs_enatl60/ directory
-[15:23:17 - training_loop - INFO] Saved optimizer state in the /data2/nora/GenDA_workspace/outputs_enatl60/ directory
-[15:23:17 - training_loop - INFO] Exiting...
+[17:26:22 - training_loop - INFO] [94mbatch_size_gpu: 4[0m
+[17:26:22 - training_loop - INFO] [94mConstructing network...[0m
+[17:26:22 - training_loop - INFO] [94mSetting up optimizer...[0m
+[17:26:23 - training_loop - WARNING] [93mCould not load network and optimizer states[0m
+[17:26:23 - training_loop - INFO] [94mTraining for 10 kimg...[0m
+[17:28:12 - training_loop - INFO] [94mtick 0     kimg 1.0       time 1m 50s       sec/tick 108.7   sec/kimg 108.73  maintenance 0.9    cpumem 16.97  gpumem 1.53   reserved 1.68  [0m
+[17:28:12 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp01_minitest_10kimg_lr=10000/ directory[0m
+[17:28:12 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp01_minitest_10kimg_lr=10000/ directory[0m
+[17:28:12 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp01_minitest_10kimg_lr=10000/ directory[0m
+[17:28:27 - training_loop - INFO] [94mtick 1     kimg 2.0       time 2m 05s       sec/tick 14.7    sec/kimg 14.66   maintenance 0.3    cpumem 16.97  gpumem 1.53   reserved 1.68  [0m
+[17:29:00 - training_loop - INFO] [94mtick 2     kimg 3.0       time 2m 38s       sec/tick 33.3    sec/kimg 33.29   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  [0m
+[17:29:14 - training_loop - INFO] [94mtick 3     kimg 4.0       time 2m 52s       sec/tick 13.9    sec/kimg 13.91   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  [0m
+[17:29:45 - training_loop - INFO] [94mtick 4     kimg 5.0       time 3m 23s       sec/tick 31.6    sec/kimg 31.61   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  [0m
+[17:30:01 - training_loop - INFO] [94mtick 5     kimg 6.0       time 3m 39s       sec/tick 15.4    sec/kimg 15.35   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  [0m
+[17:30:01 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp01_minitest_10kimg_lr=10000/ directory[0m
+[17:30:01 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp01_minitest_10kimg_lr=10000/ directory[0m
+[17:30:01 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp01_minitest_10kimg_lr=10000/ directory[0m
+[17:30:34 - training_loop - INFO] [94mtick 6     kimg 7.0       time 4m 12s       sec/tick 32.3    sec/kimg 32.29   maintenance 0.5    cpumem 16.97  gpumem 1.53   reserved 1.68  [0m
+[17:30:48 - training_loop - INFO] [94mtick 7     kimg 8.0       time 4m 26s       sec/tick 14.2    sec/kimg 14.22   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  [0m
+[17:31:21 - training_loop - INFO] [94mtick 8     kimg 9.0       time 4m 59s       sec/tick 33.4    sec/kimg 33.39   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  [0m
+[17:31:35 - training_loop - INFO] [94mtick 9     kimg 10.0      time 5m 13s       sec/tick 13.9    sec/kimg 13.95   maintenance 0.0    cpumem 16.97  gpumem 1.53   reserved 1.68  [0m
+[17:31:35 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp01_minitest_10kimg_lr=10000/ directory[0m
+[17:31:35 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp01_minitest_10kimg_lr=10000/ directory[0m
+[17:31:35 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp01_minitest_10kimg_lr=10000/ directory[0m
+[17:31:35 - training_loop - INFO] [94mExiting...[0m

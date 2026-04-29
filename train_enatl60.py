@@ -18,7 +18,7 @@ from training_diff import training_loop
 
 # ── Configuration ──────────────────────────────────────────────────────────
 data_dir   = '/data2/nora/GenDA_workspace/input_data_enatl60/'
-output_dir = '/data2/nora/GenDA_workspace/outputs_enatl60/'
+output_dir = '/data2/nora/GenDA_workspace/experiments/exp01_minitest_10kimg_lr=10000/'
 os.makedirs(output_dir, exist_ok=True)
 os.makedirs('logs', exist_ok=True)
 
@@ -153,6 +153,8 @@ c.valid_dump_ticks  = 2         # fréquence de calcul de la loss de validation
 
 c.num_validation_evals = 5      # nombre de batches pour estimer la loss de validation
 
+c.lr_rampup_kimg = 10000            # durée du warmup du learning rate en kimg. Exemple lr_rampup_kimg=10000 : le warump dure 10kimg sur 200, soit 5% de l'entrainement, c'est raisonnable.
+                                # vrai entraînement : 10000
 c.run_dir           = output_dir
 
 logger0.info('Démarrage entraînement GenDA/eNATL60')

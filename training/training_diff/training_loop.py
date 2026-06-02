@@ -60,7 +60,7 @@ def training_loop(
     total_kimg=200000,              # durée totale en kimg (1 kimg = 1000 images vues)
     ema_halflife_kimg=500,          # demi-vie de l'EMA en kimg
     ema_rampup_ratio=0.05,          # ramp-up de l'EMA au début de l'entraînement
-    lr_rampup_kimg=1,           # durée du warmup du learning rate en kimg
+    lr_rampup_kimg=10000,           # durée du warmup du learning rate en kimg. Exemple lr_rampup_kimg=10000 : le warump dure 10kimg sur 200, soit 5% de l'entrainement, c'est raisonnable. 
     loss_scaling=1,                 # facteur multiplicatif sur la loss (utile en fp16)
     kimg_per_tick=50,               # fréquence des prints de progression
     state_dump_ticks=500,           # fréquence de sauvegarde des checkpoints

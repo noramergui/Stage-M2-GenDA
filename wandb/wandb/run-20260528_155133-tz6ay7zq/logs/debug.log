@@ -1,0 +1,22 @@
+2026-05-28 15:51:33,358 INFO    MainThread:1612975 [wandb_setup.py:_flush():81] Current SDK version is 0.27.0
+2026-05-28 15:51:33,358 INFO    MainThread:1612975 [wandb_setup.py:_flush():81] Configure stats pid to 1612975
+2026-05-28 15:51:33,358 INFO    MainThread:1612975 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-05-28 15:51:33,358 INFO    MainThread:1612975 [wandb_init.py:setup_run_log_directory():723] Logging user logs to /home/nora/GenDA/wandb/wandb/run-20260528_155133-tz6ay7zq/logs/debug.log
+2026-05-28 15:51:33,358 INFO    MainThread:1612975 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to /home/nora/GenDA/wandb/wandb/run-20260528_155133-tz6ay7zq/logs/debug-internal.log
+2026-05-28 15:51:33,358 INFO    MainThread:1612975 [wandb_init.py:init():851] calling init triggers
+2026-05-28 15:51:33,358 INFO    MainThread:1612975 [wandb_init.py:init():856] wandb.init called with sweep_config: {}
+config: {'_wandb': {'code_path': 'code/train_glorys.py'}}
+2026-05-28 15:51:33,358 INFO    MainThread:1612975 [wandb_init.py:init():899] starting backend
+2026-05-28 15:51:33,664 INFO    MainThread:1612975 [wandb_init.py:init():914] sending inform_init request
+2026-05-28 15:51:33,982 INFO    MainThread:1612975 [wandb_init.py:init():919] backend started and connected
+2026-05-28 15:51:33,983 INFO    MainThread:1612975 [wandb_init.py:init():989] updated telemetry
+2026-05-28 15:51:33,988 INFO    MainThread:1612975 [wandb_init.py:init():1012] communicating run to backend with 90.0 second timeout
+2026-05-28 15:51:34,404 INFO    MainThread:1612975 [wandb_init.py:init():1057] starting run threads in backend
+2026-05-28 15:51:34,486 INFO    MainThread:1612975 [wandb_run.py:_console_start():2509] atexit reg
+2026-05-28 15:51:34,487 INFO    MainThread:1612975 [wandb_run.py:_redirect():2359] redirect: wrap_raw
+2026-05-28 15:51:34,487 INFO    MainThread:1612975 [wandb_run.py:_redirect():2428] Wrapping output streams.
+2026-05-28 15:51:34,487 INFO    MainThread:1612975 [wandb_run.py:_redirect():2451] Redirects installed.
+2026-05-28 15:51:34,489 INFO    MainThread:1612975 [wandb_init.py:init():1095] run started, returning control to user process
+2026-05-28 15:51:35,582 INFO    MainThread:1612975 [wandb_run.py:_config_callback():1332] config_cb None None {'_wandb': {'code_path': 'source-GenDA-GLORYS-train_glorys.py'}}
+2026-05-28 15:57:26,166 INFO    wandb-AsyncioManager-main:1612975 [service_client.py:_forward_responses():122] Reached EOF.
+2026-05-28 15:57:26,166 INFO    wandb-AsyncioManager-main:1612975 [mailbox.py:close():154] Closing mailbox, abandoning 1 handles.

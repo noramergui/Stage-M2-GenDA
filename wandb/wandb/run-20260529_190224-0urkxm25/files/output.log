@@ -1,0 +1,268 @@
+[19:02:26 - training_loop - INFO] [94mbatch_size_gpu: 64[0m
+[19:02:26 - training_loop - INFO] [94mConstructing network...[0m
+[19:02:26 - training_loop - INFO] [94mSetting up optimizer...[0m
+[19:02:27 - training_loop - WARNING] [93mCould not load network and optimizer states[0m
+[19:02:27 - training_loop - INFO] [94mTraining for 200 kimg...[0m
+/home/nora/GenDA/training/training_diff/training_loop.py:296: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:838.)
+  loss_sum = torch.tensor([loss_accum], device=device)
+[19:03:45 - training_loop - INFO] [94mtick 0     kimg 1.0       time 1m 19s       sec/tick 78.0    sec/kimg 76.18   maintenance 1.2    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:03:45 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:03:45 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:03:45 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:03:46 - training_loop - INFO] [94mtick 1     kimg 2.0       time 1m 21s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.4    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:03:47 - training_loop - INFO] [94mtick 2     kimg 3.1       time 1m 21s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:03:48 - training_loop - INFO] [94mtick 3     kimg 4.1       time 1m 22s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:03:49 - training_loop - INFO] [94mtick 4     kimg 5.1       time 1m 23s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:03:50 - training_loop - INFO] [94mtick 5     kimg 6.1       time 1m 24s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:03:51 - training_loop - INFO] [94mtick 6     kimg 7.2       time 1m 25s       sec/tick 0.9     sec/kimg 0.89    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:03:52 - training_loop - INFO] [94mtick 7     kimg 8.2       time 1m 26s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:03:53 - training_loop - INFO] [94mtick 8     kimg 9.2       time 1m 27s       sec/tick 0.9     sec/kimg 0.86    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:03:54 - training_loop - INFO] [94mtick 9     kimg 10.2      time 1m 28s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:03:57 - training_loop - INFO] [94mtick 10    kimg 11.3      time 1m 31s       sec/tick 3.3     sec/kimg 3.24    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:03:57 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:03:57 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:03:57 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:03:58 - training_loop - INFO] [94mtick 11    kimg 12.3      time 1m 33s       sec/tick 0.9     sec/kimg 0.90    maintenance 0.3    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:03:59 - training_loop - INFO] [94mtick 12    kimg 13.3      time 1m 33s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:00 - training_loop - INFO] [94mtick 13    kimg 14.3      time 1m 34s       sec/tick 0.9     sec/kimg 0.89    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:01 - training_loop - INFO] [94mtick 14    kimg 15.4      time 1m 35s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:02 - training_loop - INFO] [94mtick 15    kimg 16.4      time 1m 36s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:03 - training_loop - INFO] [94mtick 16    kimg 17.4      time 1m 37s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:04 - training_loop - INFO] [94mtick 17    kimg 18.4      time 1m 38s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:04 - training_loop - INFO] [94mtick 18    kimg 19.5      time 1m 39s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:05 - training_loop - INFO] [94mtick 19    kimg 20.5      time 1m 40s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:04:09 - training_loop - INFO] [94mtick 20    kimg 21.5      time 1m 43s       sec/tick 3.3     sec/kimg 3.19    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:04:09 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:04:09 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:04:09 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:04:10 - training_loop - INFO] [94mtick 21    kimg 22.5      time 1m 44s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.4    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:11 - training_loop - INFO] [94mtick 22    kimg 23.6      time 1m 45s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:12 - training_loop - INFO] [94mtick 23    kimg 24.6      time 1m 46s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:13 - training_loop - INFO] [94mtick 24    kimg 25.6      time 1m 47s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:14 - training_loop - INFO] [94mtick 25    kimg 26.6      time 1m 48s       sec/tick 0.9     sec/kimg 0.89    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:14 - training_loop - INFO] [94mtick 26    kimg 27.6      time 1m 49s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:15 - training_loop - INFO] [94mtick 27    kimg 28.7      time 1m 50s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:16 - training_loop - INFO] [94mtick 28    kimg 29.7      time 1m 51s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:17 - training_loop - INFO] [94mtick 29    kimg 30.7      time 1m 52s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:20 - training_loop - INFO] [94mtick 30    kimg 31.7      time 1m 55s       sec/tick 3.3     sec/kimg 3.21    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:21 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:04:21 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:04:21 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:04:22 - training_loop - INFO] [94mtick 31    kimg 32.8      time 1m 56s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.3    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:23 - training_loop - INFO] [94mtick 32    kimg 33.8      time 1m 57s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:24 - training_loop - INFO] [94mtick 33    kimg 34.8      time 1m 58s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:25 - training_loop - INFO] [94mtick 34    kimg 35.8      time 1m 59s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:26 - training_loop - INFO] [94mtick 35    kimg 36.9      time 2m 00s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:27 - training_loop - INFO] [94mtick 36    kimg 37.9      time 2m 01s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:28 - training_loop - INFO] [94mtick 37    kimg 38.9      time 2m 02s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:29 - training_loop - INFO] [94mtick 38    kimg 39.9      time 2m 03s       sec/tick 1.0     sec/kimg 0.97    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:30 - training_loop - INFO] [94mtick 39    kimg 41.0      time 2m 04s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:33 - training_loop - INFO] [94mtick 40    kimg 42.0      time 2m 07s       sec/tick 3.3     sec/kimg 3.25    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:04:33 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:04:33 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:04:33 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:04:34 - training_loop - INFO] [94mtick 41    kimg 43.0      time 2m 09s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.5    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:35 - training_loop - INFO] [94mtick 42    kimg 44.0      time 2m 10s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:36 - training_loop - INFO] [94mtick 43    kimg 45.1      time 2m 11s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:37 - training_loop - INFO] [94mtick 44    kimg 46.1      time 2m 12s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:38 - training_loop - INFO] [94mtick 45    kimg 47.1      time 2m 13s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:39 - training_loop - INFO] [94mtick 46    kimg 48.1      time 2m 14s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:40 - training_loop - INFO] [94mtick 47    kimg 49.2      time 2m 15s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:41 - training_loop - INFO] [94mtick 48    kimg 50.2      time 2m 15s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:42 - training_loop - INFO] [94mtick 49    kimg 51.2      time 2m 16s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:45 - training_loop - INFO] [94mtick 50    kimg 52.2      time 2m 20s       sec/tick 3.3     sec/kimg 3.23    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:46 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:04:46 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:04:46 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:04:47 - training_loop - INFO] [94mtick 51    kimg 53.2      time 2m 21s       sec/tick 0.9     sec/kimg 0.92    maintenance 0.4    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:48 - training_loop - INFO] [94mtick 52    kimg 54.3      time 2m 22s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:48 - training_loop - INFO] [94mtick 53    kimg 55.3      time 2m 23s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:49 - training_loop - INFO] [94mtick 54    kimg 56.3      time 2m 24s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:50 - training_loop - INFO] [94mtick 55    kimg 57.3      time 2m 25s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:51 - training_loop - INFO] [94mtick 56    kimg 58.4      time 2m 26s       sec/tick 1.0     sec/kimg 0.93    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:52 - training_loop - INFO] [94mtick 57    kimg 59.4      time 2m 27s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:53 - training_loop - INFO] [94mtick 58    kimg 60.4      time 2m 28s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:54 - training_loop - INFO] [94mtick 59    kimg 61.4      time 2m 28s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:04:57 - training_loop - INFO] [94mtick 60    kimg 62.5      time 2m 32s       sec/tick 3.3     sec/kimg 3.26    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:04:58 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:04:58 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:04:58 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:04:59 - training_loop - INFO] [94mtick 61    kimg 63.5      time 2m 33s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.4    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:00 - training_loop - INFO] [94mtick 62    kimg 64.5      time 2m 34s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:01 - training_loop - INFO] [94mtick 63    kimg 65.5      time 2m 35s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:02 - training_loop - INFO] [94mtick 64    kimg 66.6      time 2m 36s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:03 - training_loop - INFO] [94mtick 65    kimg 67.6      time 2m 37s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:04 - training_loop - INFO] [94mtick 66    kimg 68.6      time 2m 38s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:05 - training_loop - INFO] [94mtick 67    kimg 69.6      time 2m 39s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:06 - training_loop - INFO] [94mtick 68    kimg 70.7      time 2m 40s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:07 - training_loop - INFO] [94mtick 69    kimg 71.7      time 2m 41s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:10 - training_loop - INFO] [94mtick 70    kimg 72.7      time 2m 44s       sec/tick 3.4     sec/kimg 3.29    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:10 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:05:10 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:05:10 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:05:11 - training_loop - INFO] [94mtick 71    kimg 73.7      time 2m 46s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.3    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:12 - training_loop - INFO] [94mtick 72    kimg 74.8      time 2m 46s       sec/tick 0.9     sec/kimg 0.89    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:13 - training_loop - INFO] [94mtick 73    kimg 75.8      time 2m 47s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:14 - training_loop - INFO] [94mtick 74    kimg 76.8      time 2m 48s       sec/tick 1.1     sec/kimg 1.03    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:15 - training_loop - INFO] [94mtick 75    kimg 77.8      time 2m 49s       sec/tick 0.9     sec/kimg 0.89    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:16 - training_loop - INFO] [94mtick 76    kimg 78.8      time 2m 50s       sec/tick 0.9     sec/kimg 0.89    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:17 - training_loop - INFO] [94mtick 77    kimg 79.9      time 2m 51s       sec/tick 0.9     sec/kimg 0.89    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:18 - training_loop - INFO] [94mtick 78    kimg 80.9      time 2m 52s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:19 - training_loop - INFO] [94mtick 79    kimg 81.9      time 2m 53s       sec/tick 0.9     sec/kimg 0.90    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:22 - training_loop - INFO] [94mtick 80    kimg 82.9      time 2m 56s       sec/tick 3.3     sec/kimg 3.21    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:22 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:05:22 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:05:22 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:05:23 - training_loop - INFO] [94mtick 81    kimg 84.0      time 2m 58s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.4    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:24 - training_loop - INFO] [94mtick 82    kimg 85.0      time 2m 59s       sec/tick 0.9     sec/kimg 0.93    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:25 - training_loop - INFO] [94mtick 83    kimg 86.0      time 3m 00s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:26 - training_loop - INFO] [94mtick 84    kimg 87.0      time 3m 01s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:27 - training_loop - INFO] [94mtick 85    kimg 88.1      time 3m 02s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:28 - training_loop - INFO] [94mtick 86    kimg 89.1      time 3m 02s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:29 - training_loop - INFO] [94mtick 87    kimg 90.1      time 3m 03s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:30 - training_loop - INFO] [94mtick 88    kimg 91.1      time 3m 04s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:31 - training_loop - INFO] [94mtick 89    kimg 92.2      time 3m 05s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:34 - training_loop - INFO] [94mtick 90    kimg 93.2      time 3m 09s       sec/tick 3.3     sec/kimg 3.22    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:34 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:05:35 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:05:35 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:05:36 - training_loop - INFO] [94mtick 91    kimg 94.2      time 3m 10s       sec/tick 1.0     sec/kimg 0.93    maintenance 0.3    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:37 - training_loop - INFO] [94mtick 92    kimg 95.2      time 3m 11s       sec/tick 0.9     sec/kimg 0.91    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:37 - training_loop - INFO] [94mtick 93    kimg 96.3      time 3m 12s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:38 - training_loop - INFO] [94mtick 94    kimg 97.3      time 3m 13s       sec/tick 0.9     sec/kimg 0.91    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:39 - training_loop - INFO] [94mtick 95    kimg 98.3      time 3m 14s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:40 - training_loop - INFO] [94mtick 96    kimg 99.3      time 3m 15s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:41 - training_loop - INFO] [94mtick 97    kimg 100.4     time 3m 16s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:42 - training_loop - INFO] [94mtick 98    kimg 101.4     time 3m 17s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:43 - training_loop - INFO] [94mtick 99    kimg 102.4     time 3m 18s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:47 - training_loop - INFO] [94mtick 100   kimg 103.4     time 3m 21s       sec/tick 3.3     sec/kimg 3.25    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:47 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:05:47 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:05:47 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:05:48 - training_loop - INFO] [94mtick 101   kimg 104.4     time 3m 22s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.3    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:05:49 - training_loop - INFO] [94mtick 102   kimg 105.5     time 3m 23s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:50 - training_loop - INFO] [94mtick 103   kimg 106.5     time 3m 24s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:51 - training_loop - INFO] [94mtick 104   kimg 107.5     time 3m 25s       sec/tick 1.0     sec/kimg 0.93    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:52 - training_loop - INFO] [94mtick 105   kimg 108.5     time 3m 26s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:53 - training_loop - INFO] [94mtick 106   kimg 109.6     time 3m 27s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:54 - training_loop - INFO] [94mtick 107   kimg 110.6     time 3m 28s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:55 - training_loop - INFO] [94mtick 108   kimg 111.6     time 3m 29s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:56 - training_loop - INFO] [94mtick 109   kimg 112.6     time 3m 30s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:59 - training_loop - INFO] [94mtick 110   kimg 113.7     time 3m 33s       sec/tick 3.4     sec/kimg 3.31    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:05:59 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:05:59 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:05:59 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:06:00 - training_loop - INFO] [94mtick 111   kimg 114.7     time 3m 35s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.3    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:01 - training_loop - INFO] [94mtick 112   kimg 115.7     time 3m 36s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:02 - training_loop - INFO] [94mtick 113   kimg 116.7     time 3m 37s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:03 - training_loop - INFO] [94mtick 114   kimg 117.8     time 3m 38s       sec/tick 0.9     sec/kimg 0.91    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:04 - training_loop - INFO] [94mtick 115   kimg 118.8     time 3m 39s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:05 - training_loop - INFO] [94mtick 116   kimg 119.8     time 3m 40s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:06 - training_loop - INFO] [94mtick 117   kimg 120.8     time 3m 41s       sec/tick 1.0     sec/kimg 0.98    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:07 - training_loop - INFO] [94mtick 118   kimg 121.9     time 3m 42s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:08 - training_loop - INFO] [94mtick 119   kimg 122.9     time 3m 42s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:11 - training_loop - INFO] [94mtick 120   kimg 123.9     time 3m 46s       sec/tick 3.4     sec/kimg 3.29    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:12 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:06:12 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:06:12 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:06:13 - training_loop - INFO] [94mtick 121   kimg 124.9     time 3m 47s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.3    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:14 - training_loop - INFO] [94mtick 122   kimg 126.0     time 3m 48s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:15 - training_loop - INFO] [94mtick 123   kimg 127.0     time 3m 49s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:16 - training_loop - INFO] [94mtick 124   kimg 128.0     time 3m 50s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:17 - training_loop - INFO] [94mtick 125   kimg 129.0     time 3m 51s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:18 - training_loop - INFO] [94mtick 126   kimg 130.0     time 3m 52s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:19 - training_loop - INFO] [94mtick 127   kimg 131.1     time 3m 53s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:20 - training_loop - INFO] [94mtick 128   kimg 132.1     time 3m 54s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:21 - training_loop - INFO] [94mtick 129   kimg 133.1     time 3m 55s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:24 - training_loop - INFO] [94mtick 130   kimg 134.1     time 3m 58s       sec/tick 3.3     sec/kimg 3.25    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:24 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:06:24 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:06:24 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:06:25 - training_loop - INFO] [94mtick 131   kimg 135.2     time 4m 00s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.3    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:26 - training_loop - INFO] [94mtick 132   kimg 136.2     time 4m 01s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:27 - training_loop - INFO] [94mtick 133   kimg 137.2     time 4m 02s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:28 - training_loop - INFO] [94mtick 134   kimg 138.2     time 4m 03s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:29 - training_loop - INFO] [94mtick 135   kimg 139.3     time 4m 04s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:30 - training_loop - INFO] [94mtick 136   kimg 140.3     time 4m 04s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:31 - training_loop - INFO] [94mtick 137   kimg 141.3     time 4m 05s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:32 - training_loop - INFO] [94mtick 138   kimg 142.3     time 4m 06s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:33 - training_loop - INFO] [94mtick 139   kimg 143.4     time 4m 07s       sec/tick 0.9     sec/kimg 0.89    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:36 - training_loop - INFO] [94mtick 140   kimg 144.4     time 4m 11s       sec/tick 3.3     sec/kimg 3.22    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:36 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:06:37 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:06:37 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:06:38 - training_loop - INFO] [94mtick 141   kimg 145.4     time 4m 12s       sec/tick 1.0     sec/kimg 0.93    maintenance 0.3    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:39 - training_loop - INFO] [94mtick 142   kimg 146.4     time 4m 13s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:40 - training_loop - INFO] [94mtick 143   kimg 147.5     time 4m 14s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:40 - training_loop - INFO] [94mtick 144   kimg 148.5     time 4m 15s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:41 - training_loop - INFO] [94mtick 145   kimg 149.5     time 4m 16s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:42 - training_loop - INFO] [94mtick 146   kimg 150.5     time 4m 17s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:43 - training_loop - INFO] [94mtick 147   kimg 151.6     time 4m 18s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:44 - training_loop - INFO] [94mtick 148   kimg 152.6     time 4m 19s       sec/tick 1.0     sec/kimg 0.96    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:45 - training_loop - INFO] [94mtick 149   kimg 153.6     time 4m 20s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:49 - training_loop - INFO] [94mtick 150   kimg 154.6     time 4m 23s       sec/tick 3.3     sec/kimg 3.24    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:06:49 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:06:49 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:06:49 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:06:50 - training_loop - INFO] [94mtick 151   kimg 155.6     time 4m 24s       sec/tick 0.9     sec/kimg 0.92    maintenance 0.3    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:51 - training_loop - INFO] [94mtick 152   kimg 156.7     time 4m 25s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:52 - training_loop - INFO] [94mtick 153   kimg 157.7     time 4m 26s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:53 - training_loop - INFO] [94mtick 154   kimg 158.7     time 4m 27s       sec/tick 0.9     sec/kimg 0.91    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:54 - training_loop - INFO] [94mtick 155   kimg 159.7     time 4m 28s       sec/tick 0.9     sec/kimg 0.89    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:55 - training_loop - INFO] [94mtick 156   kimg 160.8     time 4m 29s       sec/tick 0.9     sec/kimg 0.89    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:56 - training_loop - INFO] [94mtick 157   kimg 161.8     time 4m 30s       sec/tick 0.9     sec/kimg 0.92    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:57 - training_loop - INFO] [94mtick 158   kimg 162.8     time 4m 31s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:06:58 - training_loop - INFO] [94mtick 159   kimg 163.8     time 4m 32s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:01 - training_loop - INFO] [94mtick 160   kimg 164.9     time 4m 35s       sec/tick 3.3     sec/kimg 3.22    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:01 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:07:01 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:07:01 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:07:02 - training_loop - INFO] [94mtick 161   kimg 165.9     time 4m 37s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.3    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:03 - training_loop - INFO] [94mtick 162   kimg 166.9     time 4m 38s       sec/tick 1.1     sec/kimg 1.08    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:04 - training_loop - INFO] [94mtick 163   kimg 167.9     time 4m 39s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:05 - training_loop - INFO] [94mtick 164   kimg 169.0     time 4m 40s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:07:06 - training_loop - INFO] [94mtick 165   kimg 170.0     time 4m 41s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:07:07 - training_loop - INFO] [94mtick 166   kimg 171.0     time 4m 42s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:07:08 - training_loop - INFO] [94mtick 167   kimg 172.0     time 4m 42s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:07:09 - training_loop - INFO] [94mtick 168   kimg 173.1     time 4m 43s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:07:10 - training_loop - INFO] [94mtick 169   kimg 174.1     time 4m 44s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:07:13 - training_loop - INFO] [94mtick 170   kimg 175.1     time 4m 48s       sec/tick 3.3     sec/kimg 3.24    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:07:14 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:07:14 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:07:14 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:07:15 - training_loop - INFO] [94mtick 171   kimg 176.1     time 4m 49s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.3    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:16 - training_loop - INFO] [94mtick 172   kimg 177.2     time 4m 50s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:17 - training_loop - INFO] [94mtick 173   kimg 178.2     time 4m 51s       sec/tick 1.0     sec/kimg 0.99    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:18 - training_loop - INFO] [94mtick 174   kimg 179.2     time 4m 52s       sec/tick 1.0     sec/kimg 0.97    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:19 - training_loop - INFO] [94mtick 175   kimg 180.2     time 4m 53s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:20 - training_loop - INFO] [94mtick 176   kimg 181.2     time 4m 54s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:21 - training_loop - INFO] [94mtick 177   kimg 182.3     time 4m 55s       sec/tick 1.0     sec/kimg 0.94    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:22 - training_loop - INFO] [94mtick 178   kimg 183.3     time 4m 56s       sec/tick 0.9     sec/kimg 0.92    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:22 - training_loop - INFO] [94mtick 179   kimg 184.3     time 4m 57s       sec/tick 0.9     sec/kimg 0.90    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:26 - training_loop - INFO] [94mtick 180   kimg 185.3     time 5m 00s       sec/tick 3.3     sec/kimg 3.26    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:26 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:07:26 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:07:26 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:07:27 - training_loop - INFO] [94mtick 181   kimg 186.4     time 5m 01s       sec/tick 1.0     sec/kimg 0.95    maintenance 0.3    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:28 - training_loop - INFO] [94mtick 182   kimg 187.4     time 5m 02s       sec/tick 0.9     sec/kimg 0.86    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:29 - training_loop - INFO] [94mtick 183   kimg 188.4     time 5m 03s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:30 - training_loop - INFO] [94mtick 184   kimg 189.4     time 5m 04s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:31 - training_loop - INFO] [94mtick 185   kimg 190.5     time 5m 05s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:07:32 - training_loop - INFO] [94mtick 186   kimg 191.5     time 5m 06s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:07:32 - training_loop - INFO] [94mtick 187   kimg 192.5     time 5m 07s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:07:33 - training_loop - INFO] [94mtick 188   kimg 193.5     time 5m 08s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:07:34 - training_loop - INFO] [94mtick 189   kimg 194.6     time 5m 09s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:07:38 - training_loop - INFO] [94mtick 190   kimg 195.6     time 5m 12s       sec/tick 3.3     sec/kimg 3.19    maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[19:07:38 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:07:38 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:07:38 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:07:39 - training_loop - INFO] [94mtick 191   kimg 196.6     time 5m 13s       sec/tick 0.9     sec/kimg 0.87    maintenance 0.3    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:40 - training_loop - INFO] [94mtick 192   kimg 197.6     time 5m 14s       sec/tick 0.9     sec/kimg 0.88    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:41 - training_loop - INFO] [94mtick 193   kimg 198.7     time 5m 15s       sec/tick 0.9     sec/kimg 0.86    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:41 - training_loop - INFO] [94mtick 194   kimg 199.7     time 5m 16s       sec/tick 0.9     sec/kimg 0.86    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:42 - training_loop - INFO] [94mtick 195   kimg 200.0     time 5m 16s       sec/tick 0.3     sec/kimg 0.89    maintenance 0.0    cpumem 17.06  gpumem 1.53   reserved 1.68  [0m
+[19:07:42 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:07:42 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:07:42 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/ directory[0m
+[19:07:42 - training_loop - INFO] [94mExiting...[0m

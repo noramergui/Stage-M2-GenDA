@@ -1,0 +1,47 @@
+{
+  "os": "Linux-6.14.0-37-generic-x86_64-with-glibc2.39",
+  "python": "CPython 3.11.15",
+  "startedAt": "2026-05-29T15:26:22.968754Z",
+  "program": "/home/nora/GenDA/train_glorys.py",
+  "codePath": "train_glorys.py",
+  "codePathLocal": "train_glorys.py",
+  "git": {
+    "remote": "git@github.com:noramergui/Stage-M2-GenDA.git",
+    "commit": "e2fc991c39f30354d1798df75099007ea303150a"
+  },
+  "email": "nora.mergui@univ-grenoble-alpes.fr",
+  "root": "/home/nora/GenDA/wandb",
+  "host": "dibarbox",
+  "executable": "/home/nora/miniconda3/envs/env_genda/bin/python",
+  "cpu_count": 32,
+  "cpu_count_logical": 64,
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "gpu_count": 2,
+  "disk": {
+    "/": {
+      "total": "97828376576",
+      "used": "21414735872"
+    }
+  },
+  "memory": {
+    "total": "540659929088"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 4090",
+      "memoryTotal": "25757220864",
+      "cudaCores": 16384,
+      "architecture": "Ada",
+      "uuid": "GPU-1dd7bd2e-5a16-2dbc-1f21-f50f01640dae"
+    },
+    {
+      "name": "NVIDIA GeForce RTX 4090",
+      "memoryTotal": "25757220864",
+      "cudaCores": 16384,
+      "architecture": "Ada",
+      "uuid": "GPU-c6349ab2-44be-260f-5535-b239b2ee5523"
+    }
+  ],
+  "cudaVersion": "13.0",
+  "writerId": "ii0pmrepacsv08vhkq55bqbu979jugvb"
+}

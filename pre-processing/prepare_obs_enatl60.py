@@ -71,7 +71,7 @@ print(f'Nombre de fichiers SWOT : {len(files_swot)}')
 
 # Boucle jour par jour
 
-dates = [date(2010, 6, 1) + timedelta(days=i) for i in range(2)]
+dates = [date(2010, 6, 1) + timedelta(days=i) for i in range(1)]
 
 for d in dates:
 
@@ -96,8 +96,13 @@ for d in dates:
     for f in files_swot : 
           ds_swot = xr.open_dataset(f)
 
-          if ds_swot.time.min() > t1 or ds_swot.time.max() < t0 : 
+          if ds_swot.time.values.min() > t1 or ds_swot.time.values.max() < t0:
               continue # fichier hors période
+          
+          #print(f'  Fichier SWOT trouvé : {f.split("/")[-1]}')
+
+          #print(f'  lat range : {float(ds_swot.latitude.min())} -> {float(ds_swot.latitude.max())}')
+          #print(f'  lon range : {float(ds_swot.longitude.min())} -> {float(ds_swot.longitude.max())}')
           
           # Masque temporel (2D car time x num_pixels)
           mask_t = (ds_swot.time >= t0) & (ds_swot.time < t1) # shape (time,)
@@ -106,12 +111,15 @@ for d in dates:
           mask_geo = ((ds_swot.latitude >= lat_grid[0]) & (ds_swot.latitude <= lat_grid[-1]) &
                 (ds_swot.longitude >= lon_grid[0]) & (ds_swot.longitude <= lon_grid[-1]))  # shape (time, 52)
           
+          #print(f'  mask_geo points : {mask_geo.values.sum()}')
+        
           # Combiner : mask_t (time,) et mask_geo (time, 52)
           # On étend mask_t pour qu'il soit (time, 52) en utilisant np.newaxis
           mask_st = mask_t.values[:, np.newaxis] & mask_geo.values  # shape (time, 52)
 
           if mask_st.sum() == 0:
               continue
+          #print(f'  Points dans masque_st : {mask_st.sum()}')
           lats_jour.append(ds_swot.latitude.values[mask_st]) # contient les latitudes de tous les points observés ce jour là 
           lons_jour.append(ds_swot.longitude.values[mask_st])
           ssh_jour.append(ds_swot.ssh.values[mask_st])

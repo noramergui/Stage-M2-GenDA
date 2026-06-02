@@ -27,7 +27,7 @@ class Diffusion_Training_Dataset(Dataset):
         mean_file (str): Filename of the mean values file used for normalization 
                          (default: 'glorys_means_pre_processed_fixed_noislands.nc').
         clim_file (str): Filename of the climatology file used for seasonal adjustment 
-                         (default: 'glorys_gulfstream_climatology.nc').
+                         (default: 'glorys_climatology.nc').
         multiprocessing (bool): Whether to use multiprocessing for data loading (default: True).
         augment (bool): Whether to apply data augmentation by adding random offsets to selected variables 
                         (default: False).
@@ -55,7 +55,7 @@ class Diffusion_Training_Dataset(Dataset):
                  lat_buffers = [None, None], 
                  model_file = 'glorys_pre_processed_fixed_noislands.nc', 
                  mean_file = 'glorys_means_pre_processed_fixed_noislands.nc', 
-                 clim_file = 'glorys_gulfstream_climatology.nc', 
+                 clim_file = 'glorys_climatology.nc', 
                  multiprocessing = True, 
                  augment = False,
                 ):
@@ -72,11 +72,14 @@ class Diffusion_Training_Dataset(Dataset):
         self.mean_file = mean_file
         self.clim_file = clim_file
         self.multiprocessing = multiprocessing
+        self.augment = augment
         
         if not multiprocessing:
             self.ds_model = xr.open_dataset(self.data_dir + self.model_file)
             ds_m = xr.open_dataset(self.data_dir + self.mean_file)
-            monthly_climatology = xr.open_dataset(self.data_dir + self.clim_file).isel(depth = 0, drop = True)
+            monthly_climatology = xr.open_dataset(self.data_dir + self.clim_file)
+            if 'depth' in monthly_climatology.dims:
+                monthly_climatology = monthly_climatology.isel(depth=0, drop=True)
 
             if 'so' in self.variables:
                 self.ds_model['thetao'] = self.ds_model['thetao'].groupby('time.month') - monthly_climatology['thetao']
@@ -85,8 +88,9 @@ class Diffusion_Training_Dataset(Dataset):
 
             for var in [v for v in self.variables if v not in ['so','thetao']]:   #['zos','uo','vo']:
                 self.ds_model[var] = self.ds_model[var] - ds_m[var]
-
-            self.ds_model = self.ds_model.drop('month')#.isel(depth = 0, drop = True)
+            
+            if 'month' in self.ds_model:
+                self.ds_model = self.ds_model.drop_vars('month')
 
             i_lon_min = self.lon_buffers[0]
             if self.lon_buffers[1] is not None:
@@ -114,7 +118,9 @@ class Diffusion_Training_Dataset(Dataset):
         # initialize dataset on each worker if multi-processing used.
         self.ds_model = xr.open_dataset(self.data_dir + self.model_file)
         ds_m = xr.open_dataset(self.data_dir + self.mean_file)
-        monthly_climatology = xr.open_dataset(self.data_dir + self.clim_file).isel(depth = 0, drop = True)
+        monthly_climatology = xr.open_dataset(self.data_dir + self.clim_file)
+        if 'depth' in monthly_climatology.dims:
+            monthly_climatology = monthly_climatology.isel(depth=0, drop=True)
         
         if 'so' in self.variables:
             self.ds_model['thetao'] = self.ds_model['thetao'].groupby('time.month') - monthly_climatology['thetao']
@@ -124,8 +130,9 @@ class Diffusion_Training_Dataset(Dataset):
         for var in [v for v in self.variables if v not in ['so','thetao']]:   #['zos','uo','vo']:
             self.ds_model[var] = self.ds_model[var] - ds_m[var]
         
-        self.ds_model = self.ds_model.drop('month')#.isel(depth = 0, drop = True)
-        
+        if 'month' in self.ds_model:
+            self.ds_model = self.ds_model.drop_vars('month')        
+
         i_lon_min = self.lon_buffers[0]
         if self.lon_buffers[1] is not None:
             i_lon_max = -self.lon_buffers[1]
@@ -198,7 +205,7 @@ class GenDA_OSSE_Inference_Dataset(Dataset):
         var_stds (dict): Dictionary of standard deviations for normalizing each variable in `variables`.
         model_file (str): Filename for the main model dataset (default: 'glorys_pre_processed_fixed_noislands.nc').
         mean_file (str): Filename for the dataset of mean climatology values (default: 'glorys_means_pre_processed_fixed_noislands.nc').
-        clim_file (str): Filename for the dataset of monthly climatology values (default: 'glorys_gulfstream_climatology.nc').
+        clim_file (str): Filename for the dataset of monthly climatology values (default: 'glorys_climatology.nc').
         multiprocessing (bool): Indicates if multi-processing will be used in the DataLoader. 
             Required for worker initialization (default: False).
 
@@ -227,7 +234,7 @@ class GenDA_OSSE_Inference_Dataset(Dataset):
                  var_stds,
                  model_file = 'glorys_pre_processed_fixed_noislands.nc', 
                  mean_file = 'glorys_means_pre_processed_fixed_noislands.nc', 
-                 clim_file = 'glorys_gulfstream_climatology.nc',
+                 clim_file = 'glorys_climatology.nc',
                  multiprocessing = False
                 ):
         self.data_dir = data_dir
@@ -261,7 +268,8 @@ class GenDA_OSSE_Inference_Dataset(Dataset):
         for var in [v for v in self.variables if v not in ['so','thetao']]:   #['zos','uo','vo']:
             self.ds_model[var] = self.ds_model[var] - self.ds_m[var]
         
-        self.ds_model = self.ds_model.drop('month')#.isel(depth = 0, drop = True)
+        if 'month' in self.ds_model:
+            self.ds_model = self.ds_model.drop_vars('month')
 
         self.ds_model = self.ds_model.sel(longitude = slice(self.lon_min, self.lon_max), latitude = slice(self.lat_min, self.lat_max), drop = True).sel(time=slice(self.date_range[0],self.date_range[1]), drop = True)
 
@@ -313,7 +321,7 @@ class L3L4_Regression_Training_Dataset(Dataset):
         mean_file (str): Filename of the mean values file for normalization 
                          (default: 'glorys_means_pre_processed_fixed_noislands.nc').
         clim_file (str): Filename of the climatology file for seasonal adjustments 
-                         (default: 'glorys_gulfstream_climatology.nc').
+                         (default: 'glorys_climatology.nc').
         oi_file (str): Filename of the L4 OI product file 
                        (default: 'oi_l4_ssh-sst-sss_full_domain_updated_with_errors_sigmas_ssh25_sst16_sss16_norescaling_nodemean_noislands.nc').
         mask_file (str): Filename of the observation mask file (default: 'obs_masks_ssh-sst-u-v.nc').
@@ -351,7 +359,7 @@ class L3L4_Regression_Training_Dataset(Dataset):
                  var_stds, 
                  model_file = 'glorys_pre_processed_fixed_noislands.nc', 
                  mean_file = 'glorys_means_pre_processed_fixed_noislands.nc', 
-                 clim_file = 'glorys_gulfstream_climatology.nc', 
+                 clim_file = 'glorys_climatology.nc', 
                  oi_file = 'oi_l4_ssh-sst-sss_full_domain_updated_with_errors_sigmas_ssh25_sst16_sss16_norescaling_nodemean_noislands.nc', 
                  mask_file = 'obs_masks_ssh-sst-u-v.nc', 
                  noise_file = 'OSE_L3_products.nc',
@@ -413,7 +421,8 @@ class L3L4_Regression_Training_Dataset(Dataset):
         self.ds_oi['sst_oi_standard_error'] = self.ds_oi['sst_oi_standard_error']/var_stds['thetao']
         self.ds_oi['sss_oi_standard_error'] = self.ds_oi['sss_oi_standard_error']/var_stds['so']
         
-        self.ds_model = self.ds_model.drop('month')
+        if 'month' in self.ds_model:
+            self.ds_model = self.ds_model.drop_vars('month')
 
         i_lon_min = self.lon_buffers[0]
         if self.lon_buffers[1] is not None:
@@ -571,7 +580,7 @@ class L3L4_Regression_OSSE_Inference_Dataset(Dataset):
                  var_stds,
                  model_file = 'glorys_pre_processed_fixed_noislands.nc', 
                  mean_file = 'glorys_means_pre_processed_fixed_noislands.nc', 
-                 clim_file = 'glorys_gulfstream_climatology.nc', 
+                 clim_file = 'glorys_climatology.nc', 
                  oi_file = 'oi_l4_ssh-sst-sss_full_domain_updated_with_errors_sigmas_ssh25_sst16_sss16_norescaling_nodemean_noislands.nc', 
                  mask_file = 'obs_masks_ssh-sst-u-v.nc', 
                  noise_file = 'OSE_L3_products.nc',
@@ -633,7 +642,8 @@ class L3L4_Regression_OSSE_Inference_Dataset(Dataset):
             self.ds_oi['sst_oi_standard_error'] = self.ds_oi['sst_oi_standard_error']/var_stds['thetao']
             self.ds_oi['sss_oi_standard_error'] = self.ds_oi['sss_oi_standard_error']/var_stds['so']
 
-            self.ds_model = self.ds_model.drop('month')
+            if 'month' in self.ds_model:
+                self.ds_model = self.ds_model.drop_vars('month')
 
             self.ds_model = self.ds_model.sel(longitude = slice(lon_min, lon_max), latitude = slice(lat_min, lat_max))
             self.ds_oi = self.ds_oi.sel(longitude = slice(lon_min, lon_max), latitude = slice(lat_min, lat_max))
@@ -769,7 +779,7 @@ class L3L4_Regression_OSE_Inference_Dataset(Dataset):
                  var_stds, 
                  model_file = 'glorys_pre_processed_fixed_noislands.nc', 
                  mean_file = 'glorys_means_pre_processed_fixed_noislands.nc', 
-                 clim_file = 'glorys_gulfstream_climatology.nc', 
+                 clim_file = 'glorys_climatology.nc', 
                  oi_file = 'OSE_L4_products_v2.nc', 
                  obs_file = 'OSE_L3_products_v2.nc',
                  mask_file = 'obs_masks_ssh-sst-u-v.nc',
@@ -821,7 +831,8 @@ class L3L4_Regression_OSE_Inference_Dataset(Dataset):
         for var in [v for v in unique_elements(self.variables_in, self.variables_out) if v not in ['thetao', 'so']]:
             self.ds_model[var] = self.ds_model[var] - ds_m[var]
         
-        self.ds_model = self.ds_model.drop('month')
+        if 'month' in self.ds_model:
+            self.ds_model = self.ds_model.drop_vars('month')
     
         self.ds_model = self.ds_model.sel(longitude = slice(lon_min, lon_max), latitude = slice(lat_min, lat_max))
         self.ds_oi = self.ds_oi.sel(longitude = slice(lon_min, lon_max), latitude = slice(lat_min, lat_max))

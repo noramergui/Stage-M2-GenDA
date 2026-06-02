@@ -1,0 +1,25 @@
+[16:53:46 - training_loop - INFO] [94mbatch_size_gpu: 4[0m
+[16:53:46 - training_loop - INFO] [94mConstructing network...[0m
+[16:53:47 - training_loop - INFO] [94mSetting up optimizer...[0m
+[16:53:48 - training_loop - WARNING] [93mCould not load network and optimizer states[0m
+[16:53:48 - training_loop - INFO] [94mTraining for 10 kimg...[0m
+/home/nora/GenDA/training/training_diff/training_loop.py:296: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:838.)
+  loss_sum = torch.tensor([loss_accum], device=device)
+[16:56:16 - training_loop - INFO] [94mtick 0     kimg 1.0       time 2m 29s       sec/tick 147.6   sec/kimg 147.57  maintenance 1.8    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[16:56:16 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_10kimg_129px/ directory[0m
+[16:56:16 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_10kimg_129px/ directory[0m
+[16:56:16 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_10kimg_129px/ directory[0m
+[16:56:34 - training_loop - INFO] [94mtick 1     kimg 2.0       time 2m 47s       sec/tick 17.5    sec/kimg 17.54   maintenance 0.4    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[16:56:51 - training_loop - INFO] [94mtick 2     kimg 3.0       time 3m 05s       sec/tick 17.4    sec/kimg 17.38   maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[16:57:07 - training_loop - INFO] [94mtick 3     kimg 4.0       time 3m 20s       sec/tick 15.5    sec/kimg 15.48   maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[16:57:22 - training_loop - INFO] [94mtick 4     kimg 5.0       time 3m 36s       sec/tick 15.4    sec/kimg 15.39   maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[16:57:37 - training_loop - INFO] [94mtick 5     kimg 6.0       time 3m 51s       sec/tick 15.5    sec/kimg 15.50   maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[16:57:53 - training_loop - INFO] [94mtick 6     kimg 7.0       time 4m 06s       sec/tick 15.3    sec/kimg 15.33   maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[16:58:08 - training_loop - INFO] [94mtick 7     kimg 8.0       time 4m 22s       sec/tick 15.5    sec/kimg 15.50   maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[16:58:23 - training_loop - INFO] [94mtick 8     kimg 9.0       time 4m 37s       sec/tick 15.1    sec/kimg 15.11   maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[16:58:39 - training_loop - INFO] [94mtick 9     kimg 10.0      time 4m 52s       sec/tick 15.4    sec/kimg 15.37   maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.68  [0m
+[16:58:39 - training_loop - INFO] [94mSaved model in the /data2/nora/GenDA_workspace/experiments/exp_azores_10kimg_129px/ directory[0m
+[16:58:39 - training_loop - INFO] [94mSaved EMA model in the /data2/nora/GenDA_workspace/experiments/exp_azores_10kimg_129px/ directory[0m
+[16:58:39 - training_loop - INFO] [94mSaved optimizer state in the /data2/nora/GenDA_workspace/experiments/exp_azores_10kimg_129px/ directory[0m
+[16:58:39 - training_loop - INFO] [94mExiting...[0m

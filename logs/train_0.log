@@ -1,4 +1,4 @@
-[17:26:22 - train_enatl60 - INFO] [94mDémarrage entraînement GenDA/eNATL60[0m
-[17:26:22 - train_enatl60 - INFO] [94mGPU : cuda:0[0m
-[17:26:22 - train_enatl60 - INFO] [94mtotal_kimg : 10[0m
-[17:26:22 - train_enatl60 - INFO] [94mbatch_size : 4[0m
+[19:08:32 - train_glorys - INFO] [94mDémarrage entraînement GenDA/glorys[0m
+[19:08:32 - train_glorys - INFO] [94mGPU : cuda:0[0m
+[19:08:32 - train_glorys - INFO] [94mtotal_kimg : 200[0m
+[19:08:32 - train_glorys - INFO] [94mbatch_size : 64[0m

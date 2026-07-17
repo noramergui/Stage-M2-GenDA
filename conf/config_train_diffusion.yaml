@@ -17,16 +17,28 @@
 hydra:
   job:
     chdir: true
-    name: diffusion_job
+    name: gulfstream_100kimg
   run:
-    dir: ./outputs/${hydra:job.name}
-      
+    dir: /data2/nora/GenDA_workspace/experiments/${hydra:job.name}
+
 defaults:
   - config_train_base
 
 ## Main options
-outdir: "./output_diffusion"   
-  # Where to save the results
+outdir: "."          # "." = le dossier courant, qui est le dir Hydra ci-dessus
 task: diffusion
-  # Which model to train [regression, diffusion]
+
+total_kimg: 100          # 100 000 images
+
+batch_size_global: 64
+
+batch_size_gpu: 64
+
+ema_halflife_kimg: 1  
+
+lr_rampup_kimg: 1 
+
+dump: 10
+
+validation_dump: 10
 

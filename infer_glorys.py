@@ -18,7 +18,7 @@ from modulus import Module
 # ── Configuration ──────────────────────────────────────────────────────────
 region     = 'azores'   # 'azores' ou 'gulfstream'
 data_dir   = f'/data2/nora/GenDA_workspace/input_data_{region}/'
-output_dir = f'/data2/nora/GenDA_workspace/experiments/exp_azores_200kimg_128px_v2/'
+output_dir = f'/home/nora/GenDA/outputs/diffusion_test/output_diffusion_test/'
 plot_dir   = output_dir + 'inference_plots/'
 os.makedirs(plot_dir, exist_ok=True)
 

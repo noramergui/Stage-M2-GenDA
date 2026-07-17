@@ -1,0 +1,13 @@
+[20:40:40 - training_loop - INFO] [94mbatch_size_gpu: 4[0m
+[20:40:40 - training_loop - INFO] [94mConstructing network...[0m
+[20:40:40 - training_loop - INFO] [94mSetting up optimizer...[0m
+[20:40:41 - training_loop - INFO] [92mLoaded network and optimizer states with index 10[0m
+[20:40:41 - training_loop - INFO] [94mTraining for 100 kimg...[0m
+[20:42:47 - training_loop - INFO] [94mtick 0     kimg 11.0      time 2m 07s       sec/tick 125.8   sec/kimg 125.82  maintenance 1.1    cpumem 17.05  gpumem 1.53   reserved 1.70  [0m
+[20:42:47 - training_loop - INFO] [94mSaved model in the ./output_diffusion_test directory[0m
+[20:42:47 - training_loop - INFO] [94mSaved EMA model in the ./output_diffusion_test directory[0m
+[20:42:48 - training_loop - INFO] [94mSaved optimizer state in the ./output_diffusion_test directory[0m
+[20:43:39 - training_loop - INFO] [94mtick 1     kimg 12.0      time 2m 59s       sec/tick 51.3    sec/kimg 51.28   maintenance 0.4    cpumem 17.05  gpumem 1.53   reserved 1.70  [0m
+[20:44:29 - training_loop - INFO] [94mtick 2     kimg 13.0      time 3m 49s       sec/tick 50.3    sec/kimg 50.29   maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.70  [0m
+[20:45:21 - training_loop - INFO] [94mtick 3     kimg 14.0      time 4m 40s       sec/tick 51.4    sec/kimg 51.38   maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.70  [0m
+[20:46:12 - training_loop - INFO] [94mtick 4     kimg 15.0      time 5m 32s       sec/tick 51.7    sec/kimg 51.70   maintenance 0.0    cpumem 17.05  gpumem 1.53   reserved 1.70  [0m

@@ -65,7 +65,7 @@ def training_loop(
     kimg_per_tick=50,               # fréquence des prints de progression
     state_dump_ticks=500,           # fréquence de sauvegarde des checkpoints
     cudnn_benchmark=True,           # optimisation cuDNN (False si taille fixe)
-    wandb_mode="disabled",          # mode WandB pour le logging en ligne
+    wandb_mode="offline",          # mode WandB pour le logging en ligne
     wandb_project="Modulus-Generative",
     wandb_entity="CorrDiff-DDP-Group",
     wandb_name="CorrDiff",

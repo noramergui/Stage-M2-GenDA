@@ -131,7 +131,10 @@ NN_res = 1/12
 NN_input_size = 128
 
 buffer_lon = int((NN_input_size - abs(lon_max - lon_min) / NN_res) / 2)
+print(f'buffer_lon = {buffer_lon}')
 buffer_lat = int((NN_input_size - abs(lat_max - lat_min) / NN_res) / 2)
+print(f'buffer_lat = {buffer_lat}')
+
 
 lon_min_NN, lon_max_NN = lon_min - buffer_lon * NN_res, lon_max + buffer_lon * NN_res
 lat_min_NN, lat_max_NN = lat_min - buffer_lat * NN_res, lat_max + buffer_lat * NN_res

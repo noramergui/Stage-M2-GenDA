@@ -1,0 +1,51 @@
+[20:50:19 - train - INFO] [94mCheckpoints, logs, configs, and stats will be written in this directory: /home/nora/GenDA/outputs/diffusion_job[0m
+[20:50:20 - train - INFO] [94mTraining options:[0m
+[20:50:20 - train - INFO] [94m{
+  "task": "diffusion",
+  "fp_optimizations": "amp-fp16",
+  "grad_clip_threshold": false,
+  "lr_decay": 1,
+  "network_kwargs": {
+    "model_type": "SongUNet",
+    "model_channels": 64,
+    "num_blocks": 2,
+    "embedding_type": "positional",
+    "encoder_type": "standard",
+    "decoder_type": "standard",
+    "checkpoint_level": 0,
+    "class_name": "modulus.models.diffusion.EDMPrecond",
+    "dropout": 0.13,
+    "use_fp16": false
+  },
+  "loss_kwargs": {
+    "class_name": "modulus.metrics.diffusion.EDMLoss"
+  },
+  "optimizer_kwargs": {
+    "class_name": "torch.optim.Adam",
+    "lr": 0.0002,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08
+  },
+  "total_kimg": 200000,
+  "ema_halflife_kimg": 500,
+  "lr_rampup_kimg": 10000,
+  "batch_size_gpu": 64,
+  "batch_size_global": 64,
+  "loss_scaling": 1,
+  "cudnn_benchmark": false,
+  "kimg_per_tick": 1,
+  "state_dump_ticks": 50,
+  "valid_dump_ticks": 10,
+  "num_validation_evals": 10,
+  "run_dir": "./output_diffusion"
+}[0m
+[20:50:20 - train - INFO] [94mOutput directory:        ./output_diffusion[0m
+[20:50:20 - train - INFO] [94mNetwork architecture:    ddpmpp-cwb-v0-regression[0m
+[20:50:20 - train - INFO] [94mPreconditioning & loss:  unetregression[0m
+[20:50:20 - train - INFO] [94mNumber of GPUs:          1[0m
+[20:50:20 - train - INFO] [94mBatch size:              64[0m
+[20:50:20 - train - INFO] [94mMixed-precision:         amp-fp16[0m
+[20:50:20 - train - INFO] [94mCreating output directory...[0m

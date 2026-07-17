@@ -3,7 +3,7 @@ import numpy as np
 import xarray as xr
 
 # ── Chargement des données GLORYS ──────────────────────────────────────────
-ds_g = xr.open_zarr('/data1/data/obs/level4/GLORYS_2010.zarr/')
+ds_g = xr.open_dataset('/data1/data/models/GLORYS/ref/GLORYS_2017.nc')
 
 # ── Traitement par région ──────────────────────────────────────────────────
 for region_name, lon_min, lon_max, lat_min, lat_max in [

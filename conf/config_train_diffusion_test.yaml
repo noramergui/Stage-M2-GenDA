@@ -1,0 +1,22 @@
+hydra:
+  job:
+    chdir: true
+    name: diffusion_test
+  run:
+    dir: ./outputs/${hydra:job.name}
+
+defaults:
+  - config_train_base
+
+## Main options
+outdir: "./output_diffusion_test"
+task: diffusion
+
+## Overrides test rapide (tout en kimg, 1 kimg = 1000 images)
+total_kimg: 10            # 10 kimg = 10 000 images, mini-test
+batch_size_global: 4
+batch_size_gpu: 4
+ema_halflife_kimg: 1
+lr_rampup_kimg: 1
+dump: 1
+validation_dump: 1

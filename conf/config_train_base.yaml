@@ -18,7 +18,7 @@
 ## Hyperparameters
 
 #Durée et batch
-duration: 200                   # 200 000 kimg = 200M images vues total
+total_kimg: 200                    # 200 000 kimg = 200M images vues total
   # Training duration
 
 batch_size_global: 64
@@ -38,7 +38,9 @@ cres: 5  # TODO check
 lr: 0.0002                      # Adam standard pour diffusion
   # Learning rate
 
-ema: 0.5                        # demi-vie EMA = 500kimg
+lr_rampup_kimg : 10000
+
+ema_halflife_kimg: 500                        # demi-vie EMA = 500kimg
   # EMA half-life
 
 dropout: 0.13                   # modéré
